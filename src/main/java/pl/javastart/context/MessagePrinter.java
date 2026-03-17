@@ -2,14 +2,13 @@ package pl.javastart.context;
 
 public class MessagePrinter {
 
-    private final SimpleMessageProducer simpleMessageProducer;
+    private final MessageProducer messageProducer;
 
-
-    public MessagePrinter(SimpleMessageProducer simpleMessageProducer) {
-        this.simpleMessageProducer = simpleMessageProducer;
+    public MessagePrinter(MessageProducer messageProducer) {
+        this.messageProducer = messageProducer;
     }
 
     void printMessage() {
-        System.out.println(simpleMessageProducer.getMessage());
+        System.out.println(messageProducer.getMessage());
     }
 }

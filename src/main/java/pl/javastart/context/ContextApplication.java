@@ -9,10 +9,10 @@ public class ContextApplication {
     public static void main(String[] args) {
         SpringApplication.run(ContextApplication.class, args);
 
-        SimpleMessageProducer simpleMessageProducer  = new SimpleMessageProducer();
+        MessageProducer messageProducer = new ConsoleMessageProducer();
 
-        MessagePrinter firstMessagePrinter = new MessagePrinter(simpleMessageProducer);
-        MessagePrinter secondMessagePrinter = new MessagePrinter(simpleMessageProducer);
+        MessagePrinter firstMessagePrinter = new MessagePrinter(messageProducer);
+        MessagePrinter secondMessagePrinter = new MessagePrinter(messageProducer);
 
         firstMessagePrinter.printMessage();
         secondMessagePrinter.printMessage();

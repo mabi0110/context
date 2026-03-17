@@ -1,8 +1,10 @@
 package pl.javastart.context;
 
-public class SimpleMessageProducer {
+public class SimpleMessageProducer implements MessageProducer{
 
-    String getMessage() {
+
+    @Override
+    public String getMessage() {
         return "Example message " + System.currentTimeMillis();
     }
 
