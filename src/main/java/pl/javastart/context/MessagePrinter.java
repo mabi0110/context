@@ -1,5 +1,9 @@
 package pl.javastart.context;
 
+
+import org.springframework.stereotype.Service;
+
+@Service
 public class MessagePrinter {
 
     private final MessageProducer messageProducer;
