@@ -1,6 +1,7 @@
 package pl.javastart.context.producer;
 
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -10,7 +11,7 @@ import java.nio.file.Path;
 import java.util.Scanner;
 
 @Service
-@Primary
+@Profile("file")
 public class FileMessageProducer implements MessageProducer {
 
     @Override
