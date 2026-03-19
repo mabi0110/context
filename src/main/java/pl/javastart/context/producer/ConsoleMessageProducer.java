@@ -1,4 +1,4 @@
-package pl.javastart.context;
+package pl.javastart.context.producer;
 
 import org.springframework.stereotype.Service;
 

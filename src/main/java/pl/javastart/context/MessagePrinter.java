@@ -2,6 +2,7 @@ package pl.javastart.context;
 
 
 import org.springframework.stereotype.Service;
+import pl.javastart.context.producer.MessageProducer;
 
 @Service
 public class MessagePrinter {
